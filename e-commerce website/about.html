@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us </title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+
+    .about-hero {
+      position: relative;
+      height: 90vh;
+      background: url('images/model2.jpeg') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 0 20px;
+    }
+
+    .about-hero::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5); 
+      z-index: 1;
+    }
+
+    .about-text {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      font-size: 1.2em;
+      line-height: 1.6;
+    }
+
+    .about-text h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background: #000;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 0; 
+    }
+
+    @media (max-width: 768px) {
+      .about-text h2 {
+        font-size: 2em;
+      }
+      .about-text {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">FITNESS FREAK</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Shop</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="about-hero">
+    <div class="about-text">
+      <h2>About Fitness Freak</h2>
+      <p>
+        Welcome to <strong>Fitness Freak</strong>, your one-stop shop for fitness equipment and training solutions.  
+        Our mission is to make fitness accessible to everyone by providing top-quality gym gear, expert services, and professional support.  
+        From home gyms to professional fitness studios, we equip every fitness enthusiast with the tools they need to achieve greatness.
+      </p>
+      <p style="margin-top:20px;">
+        Founded in 2025, Fitness Freak is built with passion and performance in mind.  
+        Whether you're a beginner or an athlete, we've got your back....
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Fitness Freak Store | Stay Fit, Stay Strong 💪</p>
+  </footer>
+
+</body>
+</html>
