@@ -11,6 +11,6 @@ This project is a simple and responsive e-commerce website built as part of my w
 - Built using HTML, CSS, and JavaScript
 
 ## 🧠 Technologies Used
-- HTML5 for structure
-- CSS3 for styling and layout
+- HTML for structure
+- CSS for styling and layout
 - JavaScript for interactivity and dynamic content
