@@ -4,7 +4,7 @@
 [https://toothspecialist.netlify.app](https://toothspecialist.netlify.app)
 
 ### 🏥 About  
-A modern, responsive website for **Sakthi Dental Clinic** (Hosur).  
+A modern, responsive website for **Sakthi Dental Clinic**.  
 Built to showcase treatments, FAQs, and contact information in a clean, user-friendly layout.
 
 ### ✨ Features  
@@ -18,10 +18,3 @@ Built to showcase treatments, FAQs, and contact information in a clean, user-fri
 - HTML5  
 - CSS3  
 - JavaScript (minor interactivity)
-
-### 🚀 Usage  
-Clone and open `index.html` in your browser:
-```bash
-git clone https://github.com/yourusername/toothspecialist.git
-cd toothspecialist
-
