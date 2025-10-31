@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+       <a href="index.html" class="logo">
+  <img src="SDC Logo.png" alt="Sakthi Dental Clinic Logo" />
+</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="treatments.html">Treatments</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <a href="#" class="btn primary-btn">Fix an Appointment</a>
+    </nav>
+  </header>
+
+  <section class="contact-section">
+    <div class="contact-form">
+      <h2>We would love to hear from you</h2>
+      <form onsubmit="return validateForm()">
+        <input type="text" name="name" id="name" placeholder="Your Name" required>
+        <input type="email" name="email" id="email" placeholder="Your Email" required>
+        <input type="text" name="phone" id="phone" placeholder="Phone Number" required>
+        <textarea name="message" id="message" placeholder="Your Message (optional)" rows="5"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <div class="contact-info">
+      <h2>Reach us</h2>
+      <ul>
+        <li><i class="fas fa-map-marker-alt"></i> B2/8, SBM Layout, Anthivadi, Hosur, Tamil Nadu 635109, India</li>
+        <li><i class="fas fa-envelope"></i> info@sakthidentalclinic.in</li>
+        <li><i class="fas fa-phone"></i> +91 9862890897 / +91 9363298118</li>
+        <li><i class="fas fa-clock"></i> <strong>Sunday to Saturday:</strong> 9am to 8pm</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-left">
+        <h3>Contact Us</h3>
+        <p>B2/8, SBM Layout, Anthivadi, Hosur, Tamil Nadu 635109, India</p>
+        <p>Email: info@sakthidentalclinic.in</p>
+        <p>Phone: +91 9862890897 / +91 9363298118</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="treatments.html">Treatments</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-treatments">
+        <h4>Key Treatments</h4>
+        <ul>
+          <li>Tooth Extraction</li>
+          <li>Braces & Aligners</li>
+          <li>Implants</li>
+          <li>Teeth Whitening</li>
+        </ul>
+      </div>
+      <div class="footer-socials">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function validateForm() {
+      const email = document.getElementById('email').value;
+      const phone = document.getElementById('phone').value;
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      const phonePattern = /^[0-9]{10}$/;
+
+      if (!emailPattern.test(email)) {
+        alert('Please enter a valid email address.');
+        return false;
+      }
+
+      if (!phonePattern.test(phone)) {
+        alert('Please enter a valid 10-digit phone number.');
+        return false;
+      }
+
+      return true;
+    }
+  </script>
+</body>
+</html>
